@@ -39,5 +39,49 @@
 
 # debug information files
 *.dwo
+
+# ------------------------------------------------------------------------------
+# JUCE + Xcode Standard Gitignore
+# ------------------------------------------------------------------------------
+
+# Xcode user-specific files
+**/xcuserdata/
+*.xcuserstate
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Build directories
+Builds/**/build/
+Builds/**/Intermediates/
+JuceLibraryCode/
+
+# macOS system files
 .DS_Store
-Builds/MacOSX/build
+._*
+
+# Plugin binaries (should be built, not committed)
+*.vst3
+*.component
+*.aaxplugin
+*.vst
+
+# IDE files (if using other editors)
+.vscode/
+.idea/
+
+# Debug symbols
+*.dSYM
+
+# JUCE temp files
+*.jucer~
+*.recent
+
+# AudioPluginHost artifacts
+AudioPluginHost.app/
+
+# ------------------------------------------------------------------------------
+# Project-specific exceptions (uncomment if needed)
+# ------------------------------------------------------------------------------
+# !Builds/MacOSX/GainPlugin.xcodeproj/project.pbxproj  # Required project file
+# !Builds/MacOSX/GainPlugin.xcodeproj/xcshareddata/**  # Shared schemes
